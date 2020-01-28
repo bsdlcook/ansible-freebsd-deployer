@@ -1,0 +1,5 @@
+---
+# file: tasks/user.yml
+
+- name: Add user to 'wheel' group and update shell
+  user: name={{ username }} shell= /usr/bin/{{ shell }} group=wheel append=yes

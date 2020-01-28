@@ -1,0 +1,5 @@
+---
+# file: tasks/user.yml
+
+- name: Create user account
+  user: name={{ username }} comment={{ fullname }}

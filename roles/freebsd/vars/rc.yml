@@ -1,0 +1,13 @@
+---
+# file: vars/rc.yml
+
+rc_enable:
+  - dbus_enable
+  - hald_enable
+  - clear_tmp_enable
+rc_disable: 
+  - sendmail_enable
+  - sendmail_submit_enable
+  - sendmail_outbound_enable
+  - sendmail_msp_queue_enable
+  - moused_nondefault_enable

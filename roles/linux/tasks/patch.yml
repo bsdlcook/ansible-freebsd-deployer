@@ -1,0 +1,10 @@
+---
+# file: tasks/patch.yml
+
+- name: Apply Linux-specific patches
+  patch: src={{ item }} basedir=/home/{{ username }}
+  loop:
+    - "{{ role_path }}/files/dwm.patch"
+    - "{{ role_path }}/files/st.patch"
+    - "{{ role_path }}/files/dmenu.patch"
+    - "{{ role_path }}/files/fish.patch"

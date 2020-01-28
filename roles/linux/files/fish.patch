@@ -1,0 +1,10 @@
+--- config.fish.orig		2019-09-29 01:28:54.931736000 +0100
++++ .config/fish/config.fish	2019-09-29 01:29:09.839402000 +0100
+@@ -31,6 +31,6 @@
+ set -x EDITOR emacs
+ set -x VISUAL emacs 
+ set -x TERM xterm-256color
+-set -x GOROOT /usr/local/go
++set -x GOROOT /usr/bin/go
+ set -x GOPATH ~/Development/.go
+ set -x ANSIBLE_CONFIG ~/.ansible/config/default.cfg

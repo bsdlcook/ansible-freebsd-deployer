@@ -1,0 +1,53 @@
+---
+# file: vars/packages.yml
+
+packages_deb:
+  - libportaudio2
+  - sudo
+  - git
+  - bash
+  # - spotifyd
+  - ccache
+  - cmake
+  - emacs
+  - feh
+  # - ImageMagik6
+  - zathura
+  - zathura-pdf-poppler
+  - mpv
+  - fish
+  - dunst
+  - exa
+  - htop
+  - firefox
+  # - iosevka
+  # - nerd-fonts
+  # - setxkbmap
+  - xdotool
+  - xorg
+  # - xsetroot
+
+packages_arch: 
+  - portaudio
+  - sudo
+  - git
+  - bash
+  # - spotifyd 
+  - ccache
+  - cmake
+  - emacs
+  - feh
+  - imagemagick
+  - zathura
+  - zathura-pdf-mupdf
+  - mpv
+  - fish
+  - dunst
+  - exa
+  - htop
+  - firefox
+  # - iosevka
+  - nerd-fonts-complete
+  - xdotool-git
+  # xorg-minimal
+  - xorg-xsetroot

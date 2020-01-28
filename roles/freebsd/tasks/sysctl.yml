@@ -1,0 +1,7 @@
+---
+# file: tasks/sysctl.yml
+- include_vars: sysctl.yml
+
+- name: Apply sysctl tweaks
+  sysctl: name={{ item }} value=0 sysctl_file=/etc/sysctl.conf
+  loop: "{{ sysctl_disable }}"

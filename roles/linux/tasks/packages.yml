@@ -1,0 +1,13 @@
+---
+# file: tasks/packages.yml
+- include_vars: packages.yml
+
+- name: Install preliminary Debian packages
+  apt: name={{ item }} state=present
+  loop: "{{ packages_deb }}"
+  when: ansible_facts['os_family'] == "Debian"
+
+- name: Install preliminary Arch packages
+  apt: name={{ item }} state=present
+  loop: "{{ packages_arch }}"
+  when: ansible_facts['os_family'] == "Archlinux"

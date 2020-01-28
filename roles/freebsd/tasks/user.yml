@@ -1,0 +1,5 @@
+---
+# file: tasks/user.yml
+
+- name: Update user shell
+  user: name={{ username }} shell=/usr/local/bin/{{ shell }} append=yes

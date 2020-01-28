@@ -1,0 +1,5 @@
+---
+# file: tasks/doas.yml
+
+- name: Create doas configuration
+  lineinfile: path=/usr/local/etc/doas.conf create=yes line="permit nopass {{ username }} as root"

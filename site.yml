@@ -1,0 +1,7 @@
+---
+- name: Bootsrap custom setup to remote host
+  hosts: all
+  remote_user: root
+  roles:
+    - common
+    - freebsd

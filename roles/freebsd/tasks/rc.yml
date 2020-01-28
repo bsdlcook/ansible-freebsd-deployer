@@ -1,0 +1,11 @@
+---
+# file: tasks/rc.yml
+- include_vars: rc.yml
+
+- name: Enable services
+  sysrc: name={{ item }} value=YES
+  loop: "{{ rc_enable }}"
+
+- name: Disable services
+  sysrc: name={{ item }} value=NO
+  loop: "{{ rc_disable }}"

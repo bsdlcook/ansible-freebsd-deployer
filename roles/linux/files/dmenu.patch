@@ -1,0 +1,21 @@
+--- config.mk.orig			2019-09-22 01:27:41.668217000 +0100
++++ .suckless/app/dmenu/config.mk	2019-09-29 01:24:31.788783000 +0100
+@@ -5,8 +5,8 @@
+ PREFIX = /usr/local
+ MANPREFIX = $(PREFIX)/share/man
+ 
+-X11INC = /usr/local/include
+-X11LIB = /usr/local/lib
++X11INC = /usr/X11R6/include
++X11LIB = /usr/X11R6/lib
+ 
+ # Xinerama, comment if you don't want it
+ XINERAMALIBS  = -lXinerama
+@@ -14,7 +14,7 @@
+ 
+ # freetype
+ FREETYPELIBS = -lfontconfig -lXft
+-FREETYPEINC = /usr/local/include/freetype2
++FREETYPEINC = /usr/include/freetype2
+ # OpenBSD (uncomment)
+ #FREETYPEINC = $(X11INC)/freetype2

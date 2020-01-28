@@ -1,0 +1,7 @@
+---
+# file: tasks/main.yml
+
+- include: packages.yml
+- include: sysctl.yml
+- include: rc.yml
+- include: doas.yml

@@ -1,0 +1,7 @@
+---
+# file: tasks/packages.yml
+- include_vars: packages.yml
+
+- name: Install preliminary FreeBSD packages
+  pkgng: name={{ item }} state=present
+  loop: "{{ packages }}"

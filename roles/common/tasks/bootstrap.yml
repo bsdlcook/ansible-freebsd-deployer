@@ -1,0 +1,12 @@
+---
+# file: tasks/bootstrap.yml
+
+- name: Bootstrap files to /home/{{ username }}
+  copy: src={{ item }} dest=/home/{{ username }} mode=preserve owner={{ username }} group={{ username }}
+  loop:
+    - "{{ role_path }}/files/.ansible"
+    - "{{ role_path }}/files/.emacs.d"
+    - "{{ role_path }}/files/.config"
+    - "{{ role_path }}/files/.scripts"
+    - "{{ role_path }}/files/.suckless"
+    - "{{ role_path }}/files/.xinitrc"

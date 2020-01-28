@@ -1,0 +1,7 @@
+---
+# file: group_vars/all
+
+# Account information
+username: vulcan
+fullname: Lewis Cook
+shell: fish

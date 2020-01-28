@@ -1,0 +1,29 @@
+---
+# file: vars/packages.yml
+
+packages: 
+ - portaudio
+ - doas
+ - git-lite
+ - bash
+ - spotifyd
+ - ccache-static
+ - cmake
+ - emacs
+ - feh
+ - ImageMagick6
+ - zathura
+ - zathura-pdf
+ - mupdf
+ - mpv
+ - fish
+ - dunst
+ - exa
+ - htop
+ - firefox
+ - iosevka
+ - nerd-fonts
+ - setxkbmap
+ - xdotool
+ - xorg-minimal
+ - xsetroot

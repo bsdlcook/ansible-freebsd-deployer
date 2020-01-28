@@ -1,0 +1,9 @@
+---
+# file: vars/sysctl.yml
+
+sysctl_disable:
+  - security.bsd.see_other_uids
+  - security.bsd.see_other_gids
+  - security.bsd.unprivileged_proc_debug
+  - security.bsd.unprivileged_read_msgbuf
+  - security.bsd.see_jail_proc
